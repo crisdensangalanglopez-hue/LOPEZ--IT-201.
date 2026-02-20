@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mcdo FAB Mariveles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>McFood Express</h1>
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#calculator">Bill Calculator</a>
+        <a href="#contact">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="membership.html">Membership</a>
+    </nav>
+</header>
+
+<section id="menu" class="card">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+        <div class="menu-item">
+            <h3>Big Mac</h3>
+            <p>Grilled beef patty with cheese & lettuce</p>
+            <span>₱175</span>
+        </div>
+        <div class="menu-item">
+            <h3>BFF Fries</h3>
+            <p>Crispy golden fries</p>
+            <span>₱ 149</span>
+        </div>
+        <div class="menu-item">
+            <h3>Chicken Nuggets</h3>
+            <p>6 pcs crispy nuggets</p>
+            <span>₱ 112</span>
+        </div>
+        <div class="menu-item">
+            <h3>Cerial Milk Ice Coffee</h3>
+            <p>Cold refreshing beverage</p>
+            <span>₱ 79</span>
+        </div>
+    </div>
+</section>
+
+<section id="calculator" class="card">
+    <h2>Bill Calculator</h2>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="appendValue('/')">÷</button>
+            <button onclick="appendValue('*')">×</button>
+            <button onclick="deleteLast()">⌫</button>
+
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('-')">−</button>
+
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="appendValue('+')">+</button>
+
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button class="equal" onclick="calculate()">=</button>
+
+            <button onclick="appendValue('0')" class="zero">0</button>
+            <button onclick="appendValue('.')">.</button>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="card">
+    <h2>Contact Us</h2>
+    <p>Email: support@mcfoodexpress.com</p>
+    <p>Phone: +1 234 567 890</p>
+</section>
+
+<footer>
+    <p>Follow Us</p>
+    <div class="social-links">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://tiktok.com" target="_blank">TikTok</a>
+    </div>
+    <p class="copyright">© 2026 McFood Express</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

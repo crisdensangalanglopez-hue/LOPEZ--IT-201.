@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #b30000;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #ffcc00;
+    color: #b30000;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 14px;
+    background: #b30000;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: white;
+    color: #b30000;
+}
+
+.card {
+    width: 85%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #cc0000;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+h2 {
+    color: #ffcc00;
+}
+
+/* Menu */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.menu-item {
+    background: #990000;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.menu-item span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Calculator */
+.calculator {
+    max-width: 300px;
+    margin: auto;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    background: #ffcc00;
+    color: #b30000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: white;
+}
+
+.equal {
+    grid-row: span 2;
+    background: white;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f0ebeb;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Login */
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #b30000;
+}
+
+.login-box {
+    background: #cc0000;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+}
+
+.login-box button {
+    width: 100%;
+    background: #ffcc00;
+    color: #f3f2f2;
+    font-weight: bold;
+}
+
+.box {
+    background:red;
+    padding: 60px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(216, 27, 96, 0.1); 
+    flex: 1;
+    min-width: 320px;
+}
+
+input {
+    width: 100%;
+    padding: 20px;
+    margin: 5px 0 10px;
+    border: 2px solid #fce4ec;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: red;
+}
+
+th, td {
+    border-bottom: 1px solid violet;
+    padding: 12px 10px;
+    text-align: center; 
+    font-size: 14px;
+}
+
+th {
+    background:yellow;
+    color: gray;
+}
